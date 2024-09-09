@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html>
+ <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ <title>Pride @ Harvey</title>
+<style>
+
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Poppins:ital,wght@0,400;1,500&display=swap');
+*{margin:0;padding:0;}
+.wrap{width:100%;}
+h1{
+  font-family: "Bebas Neue", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  color:rgba(0,0,0,1);
+  font-size:10rem;
+  width:80vw;
+  margin:30vh auto;
+  display:block;
+  text-align:center;
+  transition: color .2s ease-in-out;
+  text-transform:uppercase;
+}
+.gradient-text{
+  background: linear-gradient(60deg, rgba(255,0,0,1) 0%, rgba(255,154,0,1) 10%, rgba(208,222,33,1) 20%, rgba(79,220,74,1) 30%, rgba(63,218,216,1) 40%, rgba(47,201,226,1) 50%, rgba(28,127,238,1) 60%, rgba(95,21,242,1) 70%, rgba(186,12,248,1) 80%, rgba(251,7,217,1) 90%, rgba(255,0,0,1) 100%);
+  background-size: 200% 200%;
+  animation: rainbow 2s ease-in-out infinite;
+  background-clip: text;
+  -webkit-background-clip:text;
+}
+.gradient-text:hover{
+  color:rgba(0,0,0,0);
+}
+@keyframes rainbow { 
+  0%{background-position:left}
+  50%{background-position:right}
+  100%{background-position:left}
+}
+.information-block {
+        max-width: 800px;
+        margin: 40px auto;
+        padding: 20px;
+        border-radius: 20px;
+        box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+        font-family: 'Poppins', sans-serif;
+      }
+
+      .information-block.box1 {
+        background: #dc8031;
+        color: #000;
+      }
+
+      .information-block.box2 {
+        background: #7ee9bb;
+        color: #000;
+      }
+
+.information-block h2 {
+text-align: center;
+        margin-bottom: 20px;
+}
+
+      .faq-container {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: 20px; /* Add space between FAQ containers */
+      }
+
+      .faq-question {
+        flex: 1;
+        text-align: right;
+        margin-right: 20px;
+        font-weight: bold; /* Make questions bold */
+      }
+
+      .faq-answer {
+        flex: 1;
+        text-align: left;
+      }
+
+      .information-block h2 {
+        text-align: center;
+      }
+	  
+img {
+  width: 100%;
+  height: auto; /* Maintain aspect ratio */
+  object-fit: cover; /* Cover the entire container */
+}
+
+@media (max-width: 768px) { /* Adjust the breakpoint as needed */
+	h1 {
+		font-size: 6rem; /* Smaller font size for smaller screens */
+	}
+
+	.faq-container {
+		flex-direction: column; /* Stack questions and answers vertically */
+		align-items: flex-start;
+	}
+
+	.faq-question {
+		text-align: left;
+		margin-right: 0;
+	}
+
+	.faq-answer {
+		text-align: left;
+}
+}    
+.contact-section {
+  margin-top: 40px;
+  text-align: center;
+  padding: 20px;
+  border-radius: 20px;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+  background-color: #66bfe5
+}
+
+.contact-section h2 {
+  font-size: 24px;
+  font-weight: bold;
+  color: #000
+}
+
+.contact-info {
+  margin-top: 20px;
+}
+
+.contact-person {
+  font-size: 18px;
+  margin-bottom: 5px;
+  color: #404040; /* Dark gray text */
+}
+
+.contact-email {
+  font-size: 16px;
+  color: #333333; /* Darker gray text */
+  margin-bottom:10px;
+}
+
+.contact-email a {
+  color: inherit;
+}
+
+.contact-email a:hover {
+  text-decoration: underline;
+}
+.footer-container {
+  position: absolute;
+  top: 10px; /* Adjust the top position as needed */
+  right: 10px; /* Adjust the right position as needed */
+  background-color: rgba(255, 255, 255, 0.8); /* Optional: Add a background color for visibility */
+  padding: 5px 10px;
+  border-radius: 5px;
+}
+
+.footer-text {
+  font-size: 12px;
+  color: #666666;
+}
+body {
+    font-family: "Poppins", sans-serif; /* Replace "Poppins" with your desired font */
+}
+</style>
+<head>
+  <div class="footer-container">
+    <p class="footer-text">Created by Louis Bayley</p>
+  </div>
+<div class="wrap">
+	<h1>Pride <span class="gradient-text">@</span> Harvey</h1>
+</div>
+</head>
+<hr color="black" size="10px" />
+<img src = "Home/Pride At Harvey Banner.webp" type="full-image">
+<hr color="black" size="10px" />
+<div class="information-block box1">
+      <h2>About Pride @ Harvey</h2>
+      <p>The club is a LGBTQ+ group, a community of queer folk to discuss certain topics, socialise and have fun! Since 2022, it has been proud to support the LGBTQ+ students at the Harvey Grammar School, while providing a safe environment.</p>
+      <p>Furthermore, the club has had big milestones since its introduction. There has been many talkers and activists who visited the club and provided enjoyable presentations to the members about their personal expierences and their thoughts on certain matters. The club also recieved a board infront of the School's Diner where it frequently gets updated with new posters and infromational graphics about famous LGBTQ+ people.</p>   
+	  <p>It has held a poster competiton, aiming to educate more people on LGBTQ+. The winning design being presented around the school and shows how LGBTQ+ people are not defined by their identity but instead their goals and aspirations in life.</p>
+    </div>
+
+    <div class="information-block box2">
+      <h2>Frequently Asked Questions</h2>
+      <div class="faq-container">
+        <div class="faq-question">Who is in charge of the club?</div>
+        <div class="faq-answer">The staff who governs the club is <i>Mrs Muckett</i>, and the student representative of the club is <i>Louis Bayley</i></div>
+      </div>
+      <div class="faq-container">
+        <div class="faq-question">What happens at Pride @ Harvey?</div>
+        <div class="faq-answer">Community discussions, group games and interesting presentations</div>
+      </div>
+      <div class="faq-container">
+        <div class="faq-question">I am worried of coming to club incase I get outed</div>
+        <div class="faq-answer">Simply put, what happens at club <i>stays at club</i>. We are very mindful as a club to respect eachother's privacy about their identity outside of Pride @ Harvey, people in the past have been able to use their preferred name within club and not outside to better suit their personal safety.</div>
+      </div>
+      <div class="faq-container">
+        <div class="faq-question">Any drinks?</div>
+        <div class="faq-answer">Tea and Squash is always catered for!</div>
+      </div>
+	</div>
+    <div class="contact-section">
+  <h2>Contact Us</h2>
+  <div class="contact-info">
+    <p class="contact-person"><b>Student Representative:</b> Louis Bayley</p>
+    <p class="contact-email"><b>Email:</b> <a href="mailto:prideharvey@gmail.com">prideharvey@gmail.com</a></p>
+    <p class="contact-person"><b>Staff Support:</b> Mrs. Muckett</p>
+    <p class="contact-email"><b>Email:</b> <a href="mailto:Muckett@harveygs.kent.sch.uk">Muckett@harveygs.kent.sch.uk</a></p>
+  </div>
+</div>
+</div>
+</div>
+</html>

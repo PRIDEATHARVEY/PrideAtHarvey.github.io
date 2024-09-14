@@ -1,8 +1,12 @@
 <!DOCTYPE html>
 <html lang="en">
- <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
  <title>Pride @ Harvey</title>
   <link rel="icon" type="image/x-icon" href="Home/Thumbnail.png">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+	
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
 <style>
 
 @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Poppins:ital,wght@0,400;1,500&display=swap');
@@ -49,12 +53,12 @@ h1{
       }
 
       .information-block.box1 {
-        background: #dc8031;
+        background: #ff964f;
         color: #000;
       }
 
       .information-block.box2 {
-        background: #7ee9bb;
+        background: #ADD0B3;
         color: #000;
       }
 
@@ -152,9 +156,9 @@ h1{
 }
 .footer-container {
   position: absolute;
-  top: 10px; /* Adjust the top position as needed */
-  right: 10px; /* Adjust the right position as needed */
-  background-color: rgba(255, 255, 255, 0.8); /* Optional: Add a background color for visibility */
+  top: 10px;
+  right: 10px;
+  background-color: rgba(255, 255, 255, 0.8);
   padding: 5px 10px;
   border-radius: 5px;
 }
@@ -162,6 +166,143 @@ h1{
 .footer-text {
   font-size: 12px;
   color: #666666;
+}
+.carousel-control-next,
+.carousel-control-prev {
+    filter: invert(100%);
+}
+
+.card-big-shadow {
+    max-width: 320px;
+    position: relative;
+}
+
+.coloured-cards .card {
+    margin-top: 30px;
+}
+
+.card[data-radius="none"] {
+    border-radius: 0px;
+}
+.card {
+    border-radius: 8px;
+    box-shadow: 0 2px 2px rgba(204, 197, 185, 0.5);
+    background-color: #FFFFFF;
+    color: #252422;
+    margin-bottom: 20px;
+    position: relative;
+    z-index: 1;
+}
+
+
+.card[data-background="image"] .title, .card[data-background="image"] .stats, .card[data-background="image"] .category, .card[data-background="image"] .description, .card[data-background="image"] .content, .card[data-background="image"] .card-footer, .card[data-background="image"] small, .card[data-background="image"] .content a, .card[data-background="color"] .title, .card[data-background="color"] .stats, .card[data-background="color"] .category, .card[data-background="color"] .description, .card[data-background="color"] .content, .card[data-background="color"] .card-footer, .card[data-background="color"] small, .card[data-background="color"] .content a {
+    color: #FFFFFF;
+}
+.card.card-just-text .content {
+    padding: 50px 65px;
+    text-align: center;
+}
+.card .content {
+    padding: 20px 20px 10px 20px;
+}
+.card[data-color="blue"] .category {
+    color: #7a9e9f;
+}
+
+.card .category, .card .label {
+    font-size: 14px;
+    margin-bottom: 0px;
+}
+.card-big-shadow:before {
+    background-image: url("http://static.tumblr.com/i21wc39/coTmrkw40/shadow.png");
+    background-position: center bottom;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    bottom: -12%;
+    content: "";
+    display: block;
+    left: -12%;
+    position: absolute;
+    right: 0;
+    top: 0;
+    z-index: 0;
+}
+h4, .h4 {
+    font-size: 1.5em;
+    font-weight: 600;
+    line-height: 1.2em;
+}
+h6, .h6 {
+    font-size: 0.9em;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+.card .description {
+    font-size: 16px;
+    color: #66615b;
+}
+.content-card{
+    margin-top:30px;    
+}
+a:hover, a:focus {
+    text-decoration: none;
+}
+
+.card[data-color="blue"] {
+    background: #b8d8d8;
+}
+.card[data-color="blue"] .description {
+    color: #506568;
+}
+
+.card[data-color="green"] {
+    background: #d5e5a3;
+}
+.card[data-color="green"] .description {
+    color: #60773d;
+}
+.card[data-color="green"] .category {
+    color: #92ac56;
+}
+
+.card[data-color="yellow"] {
+    background: #ffe28c;
+}
+.card[data-color="yellow"] .description {
+    color: #b25825;
+}
+.card[data-color="yellow"] .category {
+    color: #d88715;
+}
+
+.card[data-color="brown"] {
+    background: #d6c1ab;
+}
+.card[data-color="brown"] .description {
+    color: #75442e;
+}
+.card[data-color="brown"] .category {
+    color: #a47e65;
+}
+
+.card[data-color="purple"] {
+    background: #baa9ba;
+}
+.card[data-color="purple"] .description {
+    color: #3a283d;
+}
+.card[data-color="purple"] .category {
+    color: #5a283d;
+}
+
+.card[data-color="orange"] {
+    background: #ff8f5e;
+}
+.card[data-color="orange"] .description {
+    color: #772510;
+}
+.card[data-color="orange"] .category {
+    color: #e95e37;
 }
 </style>
 <head>
@@ -172,15 +313,90 @@ h1{
 	<h1>Pride <span class="gradient-text">@</span> Harvey</h1>
 </div>
 </head>
-<hr color="black" size="10px" />
 <img class="banner-image"src = "Home/Pride At Harvey Banner.webp" type="full-image" alt="Pride Flag Banner">
-<hr color="black" size="10px" />
 <div class="information-block box1">
 	<h2>About Pride @ Harvey</h2>
 	<p>The club is a LGBTQ+ group, a community of queer folk to discuss certain topics, socialise and have fun! Since 2022, it has been proud to support the LGBTQ+ students at the Harvey Grammar School, while providing a safe environment.</p>
 	<p>Furthermore, the club has had big milestones since its introduction. There has been many talkers and activists who visited the club and provided enjoyable presentations to the members about their personal expierences and their thoughts on certain matters. The club also recieved a board infront of the School's Diner where it frequently gets updated with new posters and infromational graphics about famous LGBTQ+ people.</p>   
 	<p>It has held a poster competiton, aiming to educate more people on LGBTQ+. The winning design being presented around the school and shows how LGBTQ+ people are not defined by their identity but instead their goals and aspirations in life.</p>
 </div>
+
+<div class="container bootstrap snippets bootdeys">
+<div class="row">
+    <div class="col-md-4 col-sm-6 content-card">
+        <div class="card-big-shadow">
+            <div class="card card-just-text" data-background="color" data-color="blue" data-radius="none">
+                <div class="content">
+                    <h6 class="category">Club Activity</h6>
+                    <h4 class="title"><span class="material-symbols-outlined">cake</span> Cupcake Decorating</h4>
+                    <p class="description">Coat the cake with icing, decorate with sprinkles and put a flag on top!</p>
+                </div>
+            </div> <!-- end card -->
+        </div>
+    </div>
+    
+    <div class="col-md-4 col-sm-6 content-card">
+        <div class="card-big-shadow">
+            <div class="card card-just-text" data-background="color" data-color="green" data-radius="none">
+                <div class="content">
+                    <h6 class="category">Club Activity</h6>
+                    <h4 class="title"><span class="material-symbols-outlined">record_voice_over</span> Visiting Guest</h4>
+                    <p class="description">Talk to special guests, ask a question and learn more about their expierences.</p>
+                </div>
+            </div> <!-- end card -->
+        </div>
+    </div>
+    
+    <div class="col-md-4 col-sm-6 content-card">
+        <div class="card-big-shadow">
+            <div class="card card-just-text" data-background="color" data-color="yellow" data-radius="none">
+                <div class="content">
+                    <h6 class="category">Club Activity</h6>
+                    <h4 class="title"><span class="material-symbols-outlined">playing_cards</span> Community Games</h4>
+                    <p class="description">Join in on card game or some social deduction games.<br> </p>
+                </div>
+            </div> <!-- end card -->
+        </div>
+    </div>
+    
+    <div class="col-md-4 col-sm-6 content-card">
+        <div class="card-big-shadow">
+            <div class="card card-just-text" data-background="color" data-color="brown" data-radius="none">
+                <div class="content">
+                    <h6 class="category">Club Activity</h6>
+                    <h4 class="title"><span class="material-symbols-outlined">quiz</span> Quizes</h4>
+                    <p class="description">Enjoy Pub-style quizes based on current weeks or historical moments</p>
+                </div>
+            </div> <!-- end card -->
+        </div>
+    </div>
+    
+    <div class="col-md-4 col-sm-6 content-card">
+        <div class="card-big-shadow">
+            <div class="card card-just-text" data-background="color" data-color="purple" data-radius="none">
+                <div class="content">
+                    <h6 class="category">Club Activity</h6>
+                    <h4 class="title"><span class="material-symbols-outlined">award_star</span> Badge Making</h4>
+                    <p class="description">Create your flag, or illustration and get it pressed into badges.<br> </p>
+                </div>
+            </div> <!-- end card -->
+        </div>
+    </div>
+    
+    <div class="col-md-4 col-sm-6 content-card">
+        <div class="card-big-shadow">
+            <div class="card card-just-text" data-background="color" data-color="orange" data-radius="none">
+                <div class="content">
+                    <h6 class="category">Club Activity</h6>
+                    <h4 class="title"><span class="material-symbols-outlined">forum</span> Chit Chat</h4>
+                    <p class="description">Sometimes it is nice to have a sit down with everybody and nice talk.</p>
+                </div>
+            </div> <!-- end card -->
+        </div>
+    </div>
+</div>
+</div>
+
 
 <div class="information-block box2">
 	<h2>Frequently Asked Questions</h2>
@@ -202,7 +418,83 @@ h1{
 	</div>
 </div>
 
-<hr color="black" size="10px" />
+<div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      <a href="https://thebeyouproject.co.uk/meets/folkestone-meet-up-13-17/"><img class="d-block w-50 mx-auto" src="Home/Useful_Link_3.jpg" alt="BeYou Project"></a>
+	  <div class="carousel-caption d-none d-md-block">
+		<h5 class="text-dark">BeYou Project</h5>
+		<p class="text-dark">The BeYou Project connects young people in Kent and Medway who are lesbian, gay, bisexual, transgender, queer or questioning their sexual or gender identity.</p>
+    </div>
+	</div>
+    <div class="carousel-item">
+      <a href="https://www.fflag.org.uk/"><img class="d-block w-50 mx-auto" src="Home/Useful_Link_2.jpg" alt="FFlag"></a>
+	  <div class="carousel-caption d-none d-md-block">
+		<h5 class="text-dark">FFlag</h5>
+		<p class="text-dark">FFlag provides a central point for exchange of information between parents, groups and local parent contacts.</p>
+    </div>
+	</div>
+    <div class="carousel-item">
+      <a href="https://www.barnardos.org.uk/get-support/support-for-young-people/lgbt"><img src="Home/Useful_Link_1.jpg" class="d-block w-50 mx-auto" alt="Barnardos"></a>
+	  <div class="carousel-caption d-none d-md-block">
+		<h5 class="text-dark">Barnardos</h5>
+		<p class="text-dark">Barnardo’s is the largest national children’s charity in the UK. 
+		<br>They support 358,800 children, young people, parents and carers, across more than 
+		<br>800 services throughout the UK.</p>
+    </div>
+    </div>
+    <div class="carousel-item">
+      <a href="https://hidayahlgbt.com/"><img src="Home/Useful_Link_4.jpg" class="d-block w-50 mx-auto" alt="Hidayah"></a>
+	  <div class="carousel-caption d-none d-md-block">
+		<h5 class="text-dark">Hidayah</h5>
+		<p class="text-dark">Hidayah is a secular organisation; however, its projects and activities are developed specifically for the needs of LGBTQI+ MuslimsM</p>
+    </div>
+  </div>
+    <div class="carousel-item">
+      <a href="https://www.themix.org.uk/"><img src="Home/Useful_Link_5.png" class="d-block w-50 mx-auto" alt="The Mix"></a>
+	  <div class="carousel-caption d-none d-md-block">
+		<h5 class="text-dark">The Mix</h5>
+		<p class="text-dark">The Mix is the UK’s leading digital charity for under 25s, reaching over 6 million young people each year.</p>
+    </div>
+  </div>
+    <div class="carousel-item">
+      <a href="https://www.youngminds.org.uk/parent/parents-a-z-mental-health-guide/gender-identity/"><img src="Home/Useful_Link_6.png" class="d-block w-50 mx-auto" alt="Young Minds"></a>
+	  <div class="carousel-caption d-none d-md-block">
+		<h5 class="text-dark">Young Minds</h5>
+		<p class="text-dark">They provide young people with the tools to look after their mental health, and also give young people the space and confidence to get their voices heard and change the world we live in.</p>
+    </div>
+  </div>
+    <div class="carousel-item">
+      <a href="https://mermaidsuk.org.uk/"><img src="Home/Useful_Link_7.png" class="d-block w-50 mx-auto" alt="Mermaids"></a>
+	  <div class="carousel-caption d-none d-md-block">
+		<h5 class="text-dark">Mermaids</h5>
+		<p class="text-dark">Mermaids supports transgender, non-binary and gender-diverse children and young people, as well as their families and professionals involved in their care.</p>
+    </div>
+  </div>
+    <div class="carousel-item">
+      <a href="https://www.stonewall.org.uk/"><img src="Home/Useful_Link_8.png" class="d-block w-50 mx-auto" alt="Stonewall"></a>
+	  <div class="carousel-caption d-none d-md-block">
+		<h5 class="text-dark">Stonewall</h5>
+		<p class="text-dark">At Stonewall, we stand for lesbian, gay, bi, trans, queer, questioning and ace (LGBTQ+) people everywhere. We imagine a world where all LGBTQ+ people are free to be themselves and we can live our lives to the full. </p>
+    </div>
+  </div>
+    <div class="carousel-item">
+      <a href="https://africanrainbowfamily.org/"><img src="Home/Useful_Link_9.png" class="d-block w-50 mx-auto" alt="African Rainbow Family"></a>
+	  <div class="carousel-caption d-none d-md-block">
+		<h5 class="text-dark">African Rainbow Family</h5>
+		<p class="text-dark">African Rainbow Family is a charity that supports lesbian, gay, bisexual, transgender intersexual and queer refugees and those seeking asylum. </p>
+    </div>
+  </div>
+  <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="sr-only">Previous</span>
+  </a>
+  <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="sr-only">Next</span>
+  </a>
+</div>
+</div>
 <div class="contact-section">
 	<h2>Contact Us</h2>
 	<div class="contact-info">
@@ -213,4 +505,8 @@ h1{
 	</div>
 </div>
 
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+  
 </html>

@@ -1,0 +1,313 @@
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Gabarito:wght@600&family=Parkinsans&display=swap" rel="stylesheet">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<head>
+<div class="footer-container">
+	<p class="footer-text">Created by Louis Bayley</p>
+</div>
+
+<!-- https://codepen.io/glitchworker/pen/jENZGOV -->
+<div class="text-container">
+  Mental health & wellbeing 
+  portal 
+</div>
+<div class="gradient-bg">
+  <svg xmlns="http://www.w3.org/2000/svg">
+  </svg>
+  <div class="gradients-container">
+    <div class="g1"></div>
+    <div class="g2"></div>
+    <div class="g3"></div>
+    <div class="g4"></div>
+    <div class="g5"></div>
+    <div class="interactive"></div>
+  </div>
+</div>
+</head>
+<body>
+<br>
+<div class="Infobox">
+Mental health is a state of mental well-being that enables us to cope with the stresses of life,  helps us to recognise our strengths and abilities, learn well, work well, and contribute to our community. It is an integral component of health and well-being that underpins our individual and collective abilities to make decisions, build relationships and shape the world we live in.
+<span class="Undo"><i>Wellbeing</i> is defined by the Oxford English Dictionary as “the state of being comfortable, healthy, or happy”. Looking after your wellbeing can promote healthy mental health.  
+<br><br><span class="Emphasise">Remember</span>, we all have off days, and it is ok, not to feel ok! But if this feeling persists, we need to speak to someone and get the right support. This feeling will pass, it won’t last forever, but sometimes we just need a little guidance and reassurance to help us along the way. It is tough being a teenager, I know, I was one once!  </span>
+
+</div>
+<br>
+<div>
+<div class="imageflex">
+  <img src="Running.jpg">
+
+  <div class="imageflexcontent"><br>The suggested 5-ways to wellbeing from the NHS are:</p>
+  <ul>
+  <li><b>Connecting with Others:</b><br> This helps you to build a sense of self-worth and belonging and gives you an opportunity to be emotionally supported and support others. </li>
+  </li>
+  <br>
+  <li><b>Be physically active:</b><br> Exercise is not only good for your physical health, but your mental health too. It helps by raising your self-esteem, helps you to set goals or challenges and causes chemical changes in your brain which can positively change your mood! 
+  </ul>
+  </div>
+</div>
+  
+</div>
+
+
+
+<style>
+.imageflex { display: flex; padding-left:10vw;padding-right:10vw}
+.imageflexcontent { margin-left: 3vw; margin-top: 0; }
+
+img {
+  border-radius: 3vw;
+  width: 35vw;
+  height: 35vw;
+}
+@media only screen and (max-width: 900px) {
+	img{
+	display:none
+	}
+}
+
+html, body {
+  font-family: "Parkinsans", serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+  margin: 0;
+  padding: 0;
+  font-size: 20;
+  overflow-x: hidden; /* Hide horizontal scrollbar */
+}
+.Undo {
+  font-family: "Parkinsans", serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 20;
+}
+.Emphasise{
+	font-weight: bold;
+  background: -webkit-linear-gradient(0.5turn,#2f27ce, #433bff);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  }
+
+
+.Infobox {
+  padding-left: 10vw;
+  padding-right: 10vw;
+  font-size: 32;
+}
+.Infobox:first-letter {
+  font-size: 90;
+  line-height: 100%;
+}
+.text-container {
+  z-index: 100;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  position: absolute;
+  top: 0;
+  left: 0;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  font-size: 96px;
+  color: white;
+  user-select: none;
+  text-shadow: 1px 1px rgba(0,0,0,0.1);
+  font-family: "Gabarito", serif;
+  font-optical-sizing: auto;
+  font-weight: 600;
+  font-style: normal;
+}
+
+:root {
+  --color-bg1: rgb(108, 0, 162);
+  --color-bg2: rgb(0, 17, 82);
+  --color1: 18, 113, 255;
+  --color2: 221, 74, 255;
+  --color3: 100, 220, 255;
+  --color4: 200, 50, 50;
+  --color5: 180, 180, 50;
+  --color-interactive: 140, 100, 255;
+  --circle-size: 80%;
+  --blending: hard-light;
+}
+
+@keyframes moveInCircle {
+  0% {
+    transform: rotate(0deg);
+  }
+  50% {
+    transform: rotate(180deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes moveVertical {
+  0% {
+    transform: translateY(-50%);
+  }
+  50% {
+    transform: translateY(50%);
+  }
+  100% {
+    transform: translateY(-50%);
+  }
+}
+
+@keyframes moveHorizontal {
+  0% {
+    transform: translateX(-50%) translateY(-10%);
+  }
+  50% {
+    transform: translateX(50%) translateY(10%);
+  }
+  100% {
+    transform: translateX(-50%) translateY(-10%);
+  }
+}
+
+
+.gradient-bg {
+  width: 100vw;
+  height: 100vh;
+  position: relative;
+  overflow: hidden;
+  background: linear-gradient(40deg, var(--color-bg1), var(--color-bg2));
+  top: 0;
+  left: 0;
+
+  svg {
+    position: fixed;
+    top:0;
+    left:0;
+    width: 0;
+    height: 0;
+  }
+
+
+  .gradients-container {
+    filter: url(#goo) blur(40px) ;
+    width: 100%;
+    height: 100%;
+  }
+
+  .g1 {
+    position: absolute;
+    background: radial-gradient(circle at center, rgba(var(--color1), 0.8) 0, rgba(var(--color1), 0) 50%) no-repeat;
+    mix-blend-mode: var(--blending);
+
+    width: var(--circle-size);
+    height: var(--circle-size);
+    top: calc(50% - var(--circle-size) / 2);
+    left: calc(50% - var(--circle-size) / 2);
+
+    transform-origin: center center;
+    animation: moveVertical 30s ease infinite;
+
+    opacity: 1;
+  }
+
+  .g2 {
+    position: absolute;
+    background: radial-gradient(circle at center, rgba(var(--color2), 0.8) 0, rgba(var(--color2), 0) 50%) no-repeat;
+    mix-blend-mode: var(--blending);
+
+    width: var(--circle-size);
+    height: var(--circle-size);
+    top: calc(50% - var(--circle-size) / 2);
+    left: calc(50% - var(--circle-size) / 2);
+
+    transform-origin: calc(50% - 400px);
+    animation: moveInCircle 20s reverse infinite;
+
+    opacity: 1;
+  }
+
+  .g3 {
+    position: absolute;
+    background: radial-gradient(circle at center, rgba(var(--color3), 0.8) 0, rgba(var(--color3), 0) 50%) no-repeat;
+    mix-blend-mode: var(--blending);
+
+    width: var(--circle-size);
+    height: var(--circle-size);
+    top: calc(50% - var(--circle-size) / 2 + 200px);
+    left: calc(50% - var(--circle-size) / 2 - 500px);
+
+    transform-origin: calc(50% + 400px);
+    animation: moveInCircle 40s linear infinite;
+
+    opacity: 1;
+  }
+
+  .g4 {
+    position: absolute;
+    background: radial-gradient(circle at center, rgba(var(--color4), 0.8) 0, rgba(var(--color4), 0) 50%) no-repeat;
+    mix-blend-mode: var(--blending);
+
+    width: var(--circle-size);
+    height: var(--circle-size);
+    top: calc(50% - var(--circle-size) / 2);
+    left: calc(50% - var(--circle-size) / 2);
+
+    transform-origin: calc(50% - 200px);
+    animation: moveHorizontal 40s ease infinite;
+
+    opacity: 0.7;
+  }
+
+  .g5 {
+    position: absolute;
+    background: radial-gradient(circle at center, rgba(var(--color5), 0.8) 0, rgba(var(--color5), 0) 50%) no-repeat;
+    mix-blend-mode: var(--blending);
+
+    width: calc(var(--circle-size) * 2);
+    height: calc(var(--circle-size) * 2);
+    top: calc(50% - var(--circle-size));
+    left: calc(50% - var(--circle-size));
+
+    transform-origin: calc(50% - 800px) calc(50% + 200px);
+    animation: moveInCircle 20s ease infinite;
+
+    opacity: 1;
+  }
+
+  .interactive {
+    position: absolute;
+    background: radial-gradient(circle at center, rgba(var(--color-interactive), 0.8) 0, rgba(var(--color-interactive), 0) 50%) no-repeat;
+    mix-blend-mode: var(--blending);
+
+    width: 100%;
+    height: 100%;
+    top: -50%;
+    left: -50%;
+
+    opacity: 0.7;
+  }
+}
+
+.footer-container {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  background-color: rgba(255, 255, 255, 0.8);
+  padding: 5px 10px;
+  border-radius: 5px;
+  z-index:100;
+}
+
+.footer-text {
+  font-size: 12px;
+  color: #00000;
+}
+</style>
+<script>
+window.onbeforeunload = function () {
+  window.scrollTo(0, 0);
+}
+</script>

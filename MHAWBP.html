@@ -164,7 +164,169 @@ I am Mrs Muckett the Student Wellbeing Manager. As well as running Harvey pride 
   </div>
 </div>
 <br>
-</body>
+<div class="slideshow-container" style="padding-left:10vw;padding-right:10vw">
+  <h1 style="text-align: center;">Online support:</h1>
+  <br><br>
+  <div class="mySlides fade">
+    <b>BEREAVEMENT SUPPORT</b>
+    <ul class="support-list grid">
+      <li><a href="https://holg.org.uk/">holg.org.uk</a></li>
+      <li><a href="https://winstonswish.org/how-to-help-bereaved-children-understand-grief/">Winston Wish</a></li>
+      <li><a href="https://childhoodbereavementnetwork.org.uk/">Childhood Bereavement Network</a></li>
+      <li><a href="https://www.annafreud.org/resources/children-and-young-peoples-wellbeing/">Anna Freud</a></li>
+    </ul>
+  </div>
+  
+  <div class="mySlides fade">
+    <b>MENTAL HEALTH SUPPORT</b>
+    <ul class="support-list grid">
+      <li><a href="https://www.nspcc.org.uk/keeping-children-safe/support-for-parents/">NSPCC</a></li>
+      <li><a href="https://www.mind.org.uk/for-young-people/information-for-parents/">Mind.org.uk</a></li>
+      <li><a href="https://www.nhs.uk/every-mind-matters/supporting-others/childrens-mental-health/">NHS.uk</a></li>
+      <li><a href="https://www.childline.org.uk/info-advice/friends-relationships-sex/friends/top-tips-making-friends/">Childline</a></li>
+      <li><a href="https://stem4.org.uk/">Stem4</a></li>
+      <li><a href="https://www.beateatingdisorders.org.uk/">Beat Eating Disorders</a></li>
+      <li><a href="https://www.kooth.com/">Kooth</a></li>
+      <li><a href="https://chathealth.nhs.uk/">Chathealth.nhs.uk</a></li>
+      <li><a href="https://moodspark.org.uk/">Moodspark.org.uk</a></li>
+      <li><a href="https://www.qwell.io/">Qwell.io</a></li>
+      <li><a href="https://www.papyrus-uk.org/self-harm/">Papyrus-uk.org</a></li>
+      <li><a href="https://stem4.org.uk/self-harm/self-harm-steps-to-change/">Stem4 - Self harm</a></li>
+    </ul>
+  </div>
+
+  <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+  <a class="next" onclick="plusSlides(1)">&#10095;</a>
+</div>
+
+<br>
+
+<div style="text-align:center">
+  <span class="dot" onclick="currentSlide(1)"></span>
+  <span class="dot" onclick="currentSlide(2)"></span>
+</div>
+
+<script>
+let slideIndex = 1;
+showSlides(slideIndex);
+
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  let i;
+  let slides = document.getElementsByClassName("mySlides");
+  let dots = document.getElementsByClassName("dot");
+  if (n > slides.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";
+  }
+  for (i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";
+  dots[slideIndex-1].className += " active";
+}
+</script>
+
+<style>
+.slideshow-container {
+  position: relative;
+  max-width: 100%;
+  margin: auto;
+}
+
+.mySlides {
+  display: none;
+  text-align: center;
+}
+.prev{
+  position:absolute;
+  left:0;
+}
+
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 16px;
+  margin-top: -22px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+  background-color: #717171;
+}
+
+
+.support-list {
+  list-style: none;
+  padding: 0;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 10px;
+  justify-content: center; /* Center the grid items horizontally */
+  align-items: center; /* Center the grid items vertically */
+}
+
+.support-list li {
+  vertical-align: center;
+  height: 50px;
+  background-color: #f1f1f1;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+  padding: 10px;
+  transition: 0.3s;
+  text-align: center;
+}
+
+.support-list li:hover {
+  background-color: #e0e0e0;
+  transform: scale(1.05);
+}
+
+.support-list li a {
+  text-decoration: none;
+  color: #333;
+  font-weight: bold;
+}
+
+.support-list li a:hover {
+  color: #0073e6;
+}
+</style>
 
 
 
